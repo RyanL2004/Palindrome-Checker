@@ -1,0 +1,72 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centering container for the app */
+#app-container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input styles */
+#text-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+#text-input:focus {
+  border-color: #0078d4;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.3);
+}
+
+/* Button styles */
+#check-btn {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#check-btn:hover {
+  background-color: #005ba1;
+}
+
+/* Result styles */
+#result {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#result.success {
+  color: #28a745;
+}
+
+#result.failure {
+  color: #dc3545;
+}
