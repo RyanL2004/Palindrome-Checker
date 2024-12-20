@@ -1,7 +1,7 @@
 const inputText = document.getElementById("text-input");
 const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
-
+// Validate user input
 const renderAlert = () => {
   if (inputText.value === "") {
     alert("Please input a value");
@@ -10,6 +10,8 @@ const renderAlert = () => {
     return true;
   }
 };
+
+// Remove non-alphanumeric characters and convert to lowercase
 const cleanInputString = (str) => {
   return str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 };
