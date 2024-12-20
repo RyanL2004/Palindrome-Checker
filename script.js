@@ -39,6 +39,17 @@ const palindromeChecker = () => {
   }
 };
 
+// Function: Clear All Inputs and Results
+const clearResults = () => {
+  inputText.value = "";
+  result.textContent = "";
+  result.className = "";
+  history = [];
+  palindromeCounter = 0;
+  historyContainer.innerHTML = "";
+  updatePalindromeCount();
+};
+
 // Event Listeners
 checkBtn.addEventListener("click", displayResult);
 clearBtn.addEventListener("click", clearResults);
