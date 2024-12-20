@@ -16,11 +16,13 @@ const cleanInputString = (str) => {
   return str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 };
 
+// Check if the cleaned string is a palindrome
 const isPalindrom = (str) => {
   const cleaned = cleanInputString(str);
   const reverse = cleaned.split("").reverse().join("");
   return cleaned === reverse;
 };
+// Display the result to the user
 const displayResult = () => {
   if (isPalindrom(inputText.value)) {
     result.textContent = `${inputText.value} is a palindrome`;
@@ -28,6 +30,7 @@ const displayResult = () => {
     result.textContent = `${inputText.value} is not a palindrome`;
   }
 };
+// Main function triggered on button click
 const palindromeChecker = () => {
   if (!renderAlert()) {
     return;
