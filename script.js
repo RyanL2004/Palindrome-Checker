@@ -39,7 +39,15 @@ const palindromeChecker = () => {
   }
 };
 
-checkBtn.addEventListener("click", palindromeChecker);
+// Event Listeners
+checkBtn.addEventListener("click", displayResult);
+clearBtn.addEventListener("click", clearResults);
+inputText.addEventListener("input", () => {
+  if (inputText.value.trim() === "") {
+    result.textContent = "";
+    result.className = "";
+  }
+});
 
 
 
