@@ -19,3 +19,12 @@ const isPalindrom = (str) => {
   const reverse = cleaned.split("").reverse().join("");
   return cleaned === reverse;
 };
+const displayResult = () => {
+  if (isPalindrom(inputText.value)) {
+    result.textContent = `${inputText.value} is a palindrome`;
+  } else {
+    result.textContent = `${inputText.value} is not a palindrome`;
+  }
+};
+
+
