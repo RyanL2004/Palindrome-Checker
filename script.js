@@ -13,3 +13,9 @@ const renderAlert = () => {
 const cleanInputString = (str) => {
   return str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 };
+
+const isPalindrom = (str) => {
+  const cleaned = cleanInputString(str);
+  const reverse = cleaned.split("").reverse().join("");
+  return cleaned === reverse;
+};
