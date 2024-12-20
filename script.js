@@ -26,5 +26,15 @@ const displayResult = () => {
     result.textContent = `${inputText.value} is not a palindrome`;
   }
 };
+const palindromeChecker = () => {
+  if (!renderAlert()) {
+    return;
+  } else {
+    displayResult();
+  }
+};
+
+checkBtn.addEventListener("click", palindromeChecker);
+
 
 
