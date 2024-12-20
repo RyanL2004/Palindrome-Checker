@@ -1,1 +1,1 @@
-# numeralConverter-app
+# Palindrome-Checker
